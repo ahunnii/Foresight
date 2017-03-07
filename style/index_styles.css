@@ -1,0 +1,138 @@
+#BlurbDiv {
+padding: 5px;
+height: auto;
+width: 100%;
+min-height: 350px;
+}
+
+/*
+#BlurbDiv img {
+height: auto;
+width: 100%;
+max-width: 650px;
+}
+*/
+
+#GalleryTable { }
+
+#GalleryTable td {
+width: 25%;
+height: 120px;
+border-style: solid;
+border-width: 2px;
+border-color: black;
+overflow: hidden;
+}
+
+#GalleryTable a {
+display: block;
+margin-bottom: -5px;
+}
+
+#GalleryTable img {
+height: 120px;
+width: 100%;
+}
+
+#QuickCalc {
+position: absolute;
+right: 5px;
+top: 0px;
+width: 400px;
+overflow: hidden;
+}
+
+#QuickCalc select {
+max-width: 300px;
+}
+
+#QuickCalc option {
+max-width: 300px;
+}
+
+#QuickCalc .noscript {
+position: relative;
+top: 145px;
+margin-right: auto;
+margin-left: auto;
+width: 300px;
+text-align: center;
+}
+
+#QuickCalc .fieldDesc, .Error {
+padding: 2px 0px;
+font-size: 1em;
+}
+
+#QuickCalc td {
+padding: 1px;
+padding-left: 3px;
+font-size: .9em;
+}
+
+#CalcCostReportExpenses {
+width: 300px;
+}
+
+#CalcCostReportExpenses td {
+padding: 3px;
+font-size: 1.2em;
+}
+
+#CalcCostReportExpenses td.ExpensesValCell {
+text-align: right;
+}
+
+#CalcCostReport tr.ExpensesTotalRow {
+border-style: solid;
+border-color: black;
+border-width: 1px 0px 0px 0px;
+}
+
+.PanelSlider {
+width: 2000px;
+height: 100%;
+position: relative;
+}
+
+div.calcDiv {
+height: 330px;
+width: 380px;
+padding: 5px;
+position: relative;
+float: left;
+border-style: solid;
+border-color: #B2A270;
+border-width: 5px;
+}
+
+.calcDiv button.backButton {
+width: 60px;
+height: 25px;
+position: absolute;
+bottom: 5px;
+left: 10px;
+}
+
+.calcDiv button.nextButton, button.redoButton {
+width: 60px;
+height: 25px;
+position: absolute;
+bottom: 5px;
+right: 10px;
+}
+
+.calcDiv h4 {
+font-size: 1.4em;
+}
+
+#StatsData {
+margin-top: 20px;
+position: relative;
+width: 100%;
+}
+
+#IndexWrapper {
+position: relative;
+padding-right: 450px;
+}

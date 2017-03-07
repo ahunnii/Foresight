@@ -1,0 +1,16 @@
+div.Results {
+display: inline-block;
+max-width: 800px;
+max-height: 800px;
+overflow: auto;
+}
+
+#QueryInput {
+min-width: 800px;
+margin: 8px 0px;
+}
+
+p.Error {
+padding-left: 10px;
+font-size: 1em;
+}

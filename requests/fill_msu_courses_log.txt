@@ -1,0 +1,2 @@
+
+Fatal error: Call to undefined function mb_detect_encoding() in C:\Users\Kyle\Dropbox\SET_AM\Web App\Oswald\websites\include\simple_html_dom.inc.php on line 1234

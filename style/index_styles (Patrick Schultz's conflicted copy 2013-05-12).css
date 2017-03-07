@@ -1,0 +1,26 @@
+
+
+#BlurbDiv {
+padding: 5px;
+height: auto;
+width: 100%;
+}
+
+#QuickCalc {
+position: absolute;
+right: 5px;
+top: 5px;
+width: 400px;
+float: right;
+}
+
+#StatsData {
+margin-top: 20px;
+position: relative;
+width: 100%;
+}
+
+#IndexWrapper {
+position: relative;
+padding-right: 410px;
+}

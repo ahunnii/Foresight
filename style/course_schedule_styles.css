@@ -1,0 +1,135 @@
+div.Results {
+display: inline-block;
+width: 100%;
+height: 450px;
+overflow: auto;
+}
+
+table.Results tbody {
+cursor: pointer;
+}
+
+.Header img.HeaderArrow {
+width: auto;
+height: 20px;
+margin-left: 10px;
+}
+
+div.Header {
+width: auto;
+margin-top: 20px;
+margin-bottom: 10px;
+}
+
+div.Header span {
+display: inline-block;
+cursor: pointer;
+position: relative;
+}
+
+#OfferedCoursesConfig {
+margin-left: -270px;
+height: 500px;
+max-width: 250px;
+padding: 10px;
+border-style: solid;
+border-width: 2px;
+border-color: #C2B280;
+float: left;
+}
+
+form#OfferedCoursesForm {
+display: inline-block;
+}
+
+form#OfferedCoursesForm br {
+display: block;
+}
+
+form#OfferedCoursesForm select {
+max-width: 235px;
+}
+
+#OfferedCoursesList {
+display: block;
+height: auto;
+position: relative;
+}
+
+#OfferedCoursesWrapper {
+position: relative;
+padding-left: 270px;
+}
+
+#OfferedCoursesDrag img {
+width: 100%;
+position: relative;
+top: 2px;
+height: 68px;
+}
+
+#SelectedCoursesDrag img {
+width: 100%;
+height: 68px;
+}
+
+.LoaderImg {
+width: 10%;
+height: auto;
+position: absolute;
+left: 45%;
+top: 40%;
+z-index: 1000;
+display: none;
+}
+
+div.PopupBox {
+position: absolute;
+width: auto;
+height: auto;
+min-width: 105px;
+min-height: 88px;
+padding-bottom: 25px;
+padding-left: 30px;
+padding-top: 2px;
+padding-right: 10px;
+}
+
+div.PopupBox img.bg-img {
+display: block;
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0px;
+left: 0px;
+z-index: 1;
+}
+
+div.AmazonBookDiv {
+width: 100%;
+height: 100%;
+}
+
+div.AmazonBookDiv img.AmazonBookThumb {
+margin-left: auto;
+margin-right: auto;
+margin-bottom: 5px;
+display: block;
+}
+
+div.AmazonBookDiv .BookReport {
+display: block;
+position: relative;
+z-index: 2;
+padding: 5px 10px 10px 10px;
+}
+
+table.AmazonBookTable td {
+font-size: .9em;
+padding-top: 3px;
+}
+
+table.AmazonBookTable td.value {
+text-align: right;
+padding-left: 10px;
+}

@@ -1,0 +1,267 @@
+h1 {
+font-size: 2.2em;
+}
+
+h2 {
+font-size: 2.0em;
+}
+
+h3 {
+font-size: 1.8em;
+}
+
+h4 {
+font-size: 1.6em;
+}
+
+h5 {
+font-size: 1.4em;
+}
+
+p {
+font-size: 1.2em;
+}
+
+span { 
+display: block;
+}
+
+span * {
+display: inline;
+}
+
+html {
+height: 100%;
+padding-left: 25px;
+padding-right: 25px;
+/*background-color: #96F4F4;*/
+background-color: #999999;
+}
+
+body {
+min-width: 875px;
+min-height: 100%;
+max-width: 1250px;
+height: auto;
+margin-left: auto;
+margin-right: auto;
+margin-top: 25px;
+margin-bottom: 25px;
+position: relative;
+}
+
+#MastHead {
+background-image: url("../Graphics/Banner/banner_background.jpg");
+background-repeat: no-repeat;
+background-position: left top;
+background-size: 100% 100%;
+background-color: #000000;
+padding-top: 10px;
+padding-bottom: 10px;
+position: relative;
+height: 155px;
+}
+
+#MastHead h1 {
+color: #006363;
+font-style: italic;
+}
+
+#MastHead h4 {
+color: #006363;
+}
+
+#NavBar {
+height: 90px;
+width: 608px;
+margin-right: 0px;
+margin-left: 0px;
+margin-top: 0px;
+margin-bottom: 0px;
+position: absolute;
+bottom: 0px;
+left: 325px;
+z-index: 1;
+}
+
+#NavBar a {
+position: relative;
+margin: 0px;
+padding: 0px;
+}
+
+div.DropMenuDiv a {
+display: block;
+padding: 2px 5px;
+border-style: solid none none none;
+border-width: 1px;
+border-color: #666666;
+color: black;
+font-style: normal;
+text-decoration: none;
+}
+
+div.DropMenuDiv a:hover {
+background-color: #666666;
+color: #FFFFFF;
+}
+
+div.DropMenuDiv {
+position: absolute;
+visibility: hidden;
+top: 0;
+border: 1px solid #666666; /*THEME CHANGE HERE*/
+border-width: 0px 1px 1px 1px;
+font:normal 12px Verdana;
+line-height:18px;
+z-index:100;
+background-color: #C8C8C8;
+width: 200px;
+}
+
+#ProfileDropMenu {
+
+}
+
+#CalculatorDropMenu {
+
+}
+
+div#ContentWrapper {
+padding-left: 220px;
+background-color: white;
+border-style: none solid;
+border-width: 3px;
+border-color: #000000;
+}
+
+div#SideNav {
+position: relative;
+margin-left: -210px;
+float: left;
+border-style: none solid none none;
+border-width: 1px;
+width: 175px;
+border-color: #999999;
+top: 10px;
+}
+
+div.Login {
+color: #FFFFFF;
+position: absolute;
+top: 10px;
+right: 10px;
+}
+
+div.Login a {
+color: #DDDDDD;
+}
+
+div.Login a:hover {
+color: white;
+}
+
+.Error {
+color: #FF0000;
+}
+
+.Formrow td {
+padding: 5px 5px 5px 0px;
+}
+
+table.ListTable {
+overflow: scroll;
+border-style: solid;
+border-width: 2px;
+border-color: #999999;
+border-collapse: collapse;
+}
+
+table.ListTable tr {
+background-color: #DDDDDD;
+color: black;
+border-top: 1px solid #FFFFFF;
+}
+
+table.ListTable th {
+background-color: white;
+color: black;
+padding: 3px 5px;
+}
+
+table.ListTable th:hover {
+
+}
+
+table.ListTable td {
+padding: 3px 5px;
+}
+
+table.ListTable td:hover {
+cursor: pointer;
+}
+
+#Content {
+height: auto;
+background-color: white;
+min-height: 100%;
+padding: 10px;
+}
+
+#Content h4 {
+color: black;
+}
+
+#Footer {
+background: url("../Graphics/Banner/banner_background.jpg");
+background-repeat: no-repeat;
+background-position: top left;
+background-size: 100% 100%;
+background-color: black;
+height: 80px;
+display: block;
+color: white;
+padding-top: 10px;
+padding-left: 10px;
+padding-bottom: 10px;
+bottom: 0;
+left: 0;
+right: 0;
+clear: both;
+margin-right: auto;
+margin-left: auto;
+position: relative;
+}
+
+#Footer h1, h2, h3, h4, h5 {
+color: white;
+}
+
+#Footer a {
+color: #DDDDDD;
+}
+
+#Footer a:hover {
+color: white;
+}
+
+#ButtonsWrapper {
+position: absolute;
+right: 0px;   
+top: 10px;
+width: 100px;
+}
+
+/* For modern browsers */
+.clearfix:before,
+.clearfix:after {
+    content:"";
+    display:table;
+}
+.clearfix:after {
+    clear:both;
+}
+/* For IE 6/7 (trigger hasLayout) */
+.clearfix {
+    zoom:1;
+}

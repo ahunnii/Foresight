@@ -1,0 +1,159 @@
+<?php
+	# Manually begin session if not defined in php.ini
+	if (!isset($_SESSION)) {
+		session_start();
+	}
+?>
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta encoding="utf-8"/>
+		<title><?php if (isset($page_title)) echo $page_title; ?></title>
+		<link rel="stylesheet" type="text/css" href="style/css_reset.css"/>
+		<link rel="stylesheet" type="text/css" href="style/static_styles.css"/>
+		<script type="text/javascript" src="JavaScript/ImageSwapping.js"></script>
+		<script type="text/javascript" src="JavaScript/dropdowntabs.js"></script>
+		<script type="text/javascript">
+			function onPageLoad() {
+				MM_preloadImages(
+						'Graphics/NavBar/NavHover_04.png',
+						'Graphics/NavBar/NavHover_06.png',
+						'Graphics/NavBar/NavHover_08.png',
+						'Graphics/NavBar/NavHover_10.png');
+								
+				tabdropdown.init("NavBar", 0)
+				
+				<?php if (!empty($on_page_load)) echo $on_page_load . ';' ?>
+			}
+		</script>
+		<?php
+			if (isset($header_elements)) {
+				foreach ($header_elements as $element) {
+					echo $element;
+				}
+			}
+			
+			require_once($_SERVER['DOCUMENT_ROOT'] . "/../Secure/error_reporting.inc.php");
+			require_once($_SERVER['DOCUMENT_ROOT'] . "/../Secure/db_connect.inc.php");
+		?>
+	</head>
+
+	<body onload="onPageLoad()">
+		
+		<div id="MastHead">
+			<a href="index.php"><img src="Graphics/Banner/banner_title.png" alt="Foresight" height="155" width="350"/></a>
+			
+			<div class="Login">
+				<?php 
+					if (isset($_SESSION['User_Id'])) {
+						echo "<table><tr><td>{$_SESSION['User_Name']} &nbsp;</td><td><a href=\"logout.php\">Logout</a></td></tr></table>";
+					} else {
+						echo "<form method=\"post\" action=\"login_validation.php\">
+					<!-- Where to redirect to from the login validation page -->
+					<input type=\"hidden\" name=\"redirect\" value=\"{$_SERVER['SERVER_NAME']}{$_SERVER['PHP_SELF']}\"/>
+					
+					<table>
+						<tr>
+							<td>
+								<input type=\"text\" name=\"username\" size=\"25\" maxlength=\"25\" placeholder=\"Username\"/>&nbsp;
+							</td>
+							<td>
+								<input type=\"password\" name=\"password\" size=\"25\" maxlength=\"25\" placeholder=\"Password\"/>&nbsp;
+							</td>
+							<td>
+								<input type=\"submit\" value=\"Login\"/>&nbsp;
+							</td>
+							<td>
+								<a href=\"user_registration_form.php\">Register</a>
+							</td>
+						</tr>
+					</table>
+				</form>";
+					}
+				?>
+				
+			</div>
+			
+			<div id="NavBar" class="bluetabs">
+					<ul>
+					<span>
+						
+						<li onmouseout="MM_swapImgRestore()" onmouseover=
+						"MM_swapImage('Calculator','','Graphics/NavBar/NavHover_04.png',1)">
+							<a href="calculator.php" rel="CalculatorDropMenu"><img src="Graphics/NavBar/NavBar_04.png"
+							alt="Calculator" width="184" height="85" id="Calculator" name="Calculator"></a>
+						</li>
+						
+						<li onmouseout="MM_swapImgRestore()" onmouseover=
+						"MM_swapImage('Profile','','Graphics/NavBar/NavHover_06.png',1)">
+							<a href="profile.php" rel="ProfileDropMenu"><img src="Graphics/NavBar/NavBar_06.png"
+							alt="Profile" width="118" height="85" id="Profile" name="Profile"></a>
+						</li>
+						
+						<li onmouseout="MM_swapImgRestore()" onmouseover=
+						"MM_swapImage('Search','','Graphics/NavBar/NavHover_10.png',1)">
+							<a href="Search.php" rel="SearchDropMenu"><img src="Graphics/NavBar/NavBar_10.png"
+							alt="Search" width="117" height="85" id="Search" name="Search"></a>
+						</li>	
+						
+						<li onmouseout="MM_swapImgRestore()" onmouseover=
+						"MM_swapImage('About','','Graphics/NavBar/NavHover_08.png',1)">
+							<a href="about.php"><img src="Graphics/NavBar/NavBar_08.png"
+							alt="About" width="117" height="85" id="About" name="About"></a>
+						</li>
+						
+					</span>
+					</ul>
+			</div>
+			<div id="ProfileDropMenu" class="DropMenuDiv">
+				<a href="profile.php">My Profile</a>
+				<a href="user_colleges.php">My Colleges</a>
+				<a href="http://www.codingforums.com">insert1</a>
+				<a href="http://www.javascriptkit.com/jsref/">insert2</a>
+			</div>
+			<div id="CalculatorDropMenu" class="DropMenuDiv">
+				<a href="http://www.cssdrive.com">Insert1</a>
+				<a href="http://www.cssdrive.com">Insert2</a>
+				<a href="http://www.cssdrive.com">Insert3</a>
+			</div>
+			<div id="SearchDropMenu" class="DropMenuDiv">
+				<a href="browse_colleges.php">Browse Colleges</a>
+				<a href="http://www.cssdrive.com">Insert2</a>
+				<a href="http://www.cssdrive.com">Insert3</a>
+			</div>	
+			
+		</div> <!-- End Masthead Div -->
+		
+		<div id="ContentWrapper">
+		
+		<div id="SideNav">
+			<p>Nav Bar</p>
+
+			<a href="index.php" <p>Home</p> </a>
+
+			<a href="profile.php" <p>Profile</p> </a>
+
+			<a href="calculator.php" <p>Calculator</p> </a>
+
+			<a href="about.php" <p>About Us</p> </a>
+
+			<a href="profile.php" <p>Profile</p> </a>
+			
+			<a href="image_slider.php" <p>Image Slider</p> </a>
+
+			<p>Other Calculators</p>
+
+			<p>----</p>
+
+			<p>---</p>
+
+			<p>----</p>
+
+			<p>---</p>
+
+			<p>----</p>
+		</div>
+		
+		<div id="Content">
+		

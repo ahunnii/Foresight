@@ -1,0 +1,87 @@
+#Wrapper {
+padding-left: 300px;
+padding-right: 100px;
+}
+
+#BrowseConfig  {
+border-style: none solid solid none;
+border-width: 1px;
+border-color: #999999;
+height: 100%;
+padding: 25px;
+width: 165px;
+float: left;
+margin-left: -300px;
+}
+
+#BrowseConfig input, select {
+margin: 0 0 12px 0;
+}
+
+#BrowseWindow {
+float: left;
+width: 100%;
+}
+
+#BrowseWindow p, a {
+padding: 5px 0px;
+}
+
+#BrowseWindow table.ResultTable {
+width: 100%;
+}
+
+.SearchElement {
+border-style: solid;
+border-width: 1px;
+border-color: #999999;
+}
+
+.SearchElement td {
+padding: 10px;
+}
+
+div#paginator {
+display: block;
+padding: 0;
+font-size: 12px;
+text-align: center;
+font-weight: bold;
+font-size: 1.2em;
+clear: both;
+}
+
+div#paginator b {
+margin: 0px 3px;
+}
+
+div#paginator a {
+margin: 0 3px;
+padding: 2px 6px;
+font-weight: normal;
+border: 1px solid #EAEAEA;
+color: blue;
+}
+
+div#paginator a.arrow {
+border: none;
+}
+
+div#paginator a.arrow:hover {
+background: white;
+color: #9093FF;
+}
+
+div#paginator a.current {
+border: 1px solid #AAA;
+}
+
+div#paginator a:hover {
+background: #999999;
+color: #FFFFFF;
+}
+
+div#paginator span {
+margin: 0 3px;
+padding: 2px 6px;
+}

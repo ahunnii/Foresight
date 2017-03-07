@@ -1,0 +1,23 @@
+table.Results {
+width: 100%;
+border-style: solid;
+border-color: #B2A270;
+border-width: 2px;
+}
+
+table.Results .even {
+background-color: #B2A270;
+}
+
+table.Results .odd {
+background-color: #C2B280;
+}
+
+table.Results th {
+padding: 3px 6px;
+background-color: #B2A270;
+}
+
+table.Results td {
+padding: 3px 6px;
+}

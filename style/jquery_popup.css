@@ -1,0 +1,12 @@
+div.PopupBox {
+position: absolute;
+width: auto;
+height: auto;
+min-width: 105px;
+min-height: 88px;
+padding-bottom: 25px;
+padding-left: 30px;
+padding-top: 2px;
+padding-right: 10px;
+background-image: url('../Graphics/popup.png');
+}

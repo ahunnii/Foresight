@@ -1,0 +1,113 @@
+div#InfoDiv {
+width: 100%;
+height: 100%;
+float: left;
+}
+
+div#InfoDiv td {
+font-size: 1em;
+}
+
+div#InfoDiv h4 {
+font-size: 1.4em;
+}
+
+div#RightDiv {
+width: 375px;
+position: absolute;
+clear: none;
+right: -385px;
+top: 0px;
+}
+
+div#ImgDiv {
+width: 375px;
+height: 300px;
+max-width: 500px;
+clear: none;
+position: relative;
+right: 0px;
+}	
+
+div.GalleryDiv {
+width: 300px;
+height: 300px;
+}
+
+img.GalleryImage {
+z-index: 1;
+background-color: black;
+position: relative;
+height: 100%;
+width: auto;
+display: block;
+margin-right: auto;
+margin-left: auto;
+min-width: 100%;
+}
+
+p.GalleryDesc {
+color: white;
+font-size: 1em;
+position: relative;
+z-index: 2;
+}
+
+div.GalleryDesc {
+position: absolute;
+left: 0px;
+bottom: 0px;
+width: 75%;
+padding: 10px;
+z-index: 1;
+}
+
+div.Gallery-bg {
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0px;
+left: 0px;
+background-color: black;
+opacity: .5;
+z-index: 1;
+}
+
+div.panel-wrapper {
+width: 100%;
+height: 100%;
+overflow: hidden;
+position: relative;
+padding: 0px;
+}
+
+div#MapCanvas {
+width: 300px;
+height: 300px;
+position: relative;
+margin-right: auto;
+margin-left: auto;
+margin-top: 10px;
+margin-bottom: 10px;
+clear: none;
+right: 0px;
+}
+
+div#DisplayWrapper {
+position: relative;
+margin-right: 385px;
+min-height: 625px;
+}
+
+div#OfferedDegrees {
+padding-top: 20px;
+padding-bottom: 20px;
+display: block;
+clear: both;
+}
+
+div#DegWrapper {
+max-height: 300px;
+overflow-y: auto;
+overflow-x: hidden;
+}
